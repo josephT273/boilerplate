@@ -1,0 +1,104 @@
+{
+  "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v10/terminal-keeper.json",
+  "theme": "tribe",
+  "active": "default",
+  "activateOnStartup": true,
+  "keepExistingTerminals": false,
+  "sessions": {
+    "default": [
+      {
+        "name": "hello",
+        "autoExecuteCommands": true,
+        "icon": "person",
+        "color": "terminal.ansiGreen",
+        "commands": [
+          "echo hello"
+        ]
+      },
+      {
+        "name": "wsl",
+        "icon": "terminal-linux",
+        "color": "terminal.ansiCyan",
+        "commands": [
+          "wsl"
+        ],
+        "autoExecuteCommands": true
+      },
+      {
+        "name": "dev",
+        "icon": "rocket",
+        "color": "terminal.ansiBlue",
+        "commands": [
+          "pnpm dev"
+        ]
+      },
+      {
+        "name": "build",
+        "icon": "tools",
+        "color": "terminal.ansiYellow",
+        "commands": [
+          "pnpm build"
+        ]
+      },
+      {
+        "name": "check",
+        "icon": "check",
+        "color": "terminal.ansiGreen",
+        "commands": [
+          "pnpm check"
+        ]
+      },
+      {
+        "name": "check-types",
+        "icon": "symbol-type-parameter",
+        "color": "terminal.ansiMagenta",
+        "commands": [
+          "pnpm check-types"
+        ]
+      },
+      {
+        "name": "db:push",
+        "icon": "database",
+        "color": "terminal.ansiBlue",
+        "commands": [
+          "pnpm db:push"
+        ]
+      },
+      {
+        "name": "db:studio",
+        "icon": "preview",
+        "color": "terminal.ansiCyan",
+        "commands": [
+          "pnpm db:studio"
+        ]
+      },
+      {
+        "name": "db:generate",
+        "icon": "gear",
+        "color": "terminal.ansiYellow",
+        "commands": [
+          "pnpm db:generate"
+        ]
+      },
+      {
+        "name": "db:migrate",
+        "icon": "run-above",
+        "color": "terminal.ansiRed",
+        "commands": [
+          "pnpm db:migrate"
+        ]
+      }
+    ],
+    "saved-session": [
+      {
+        "name": "connect",
+        "icon": "plug",
+        "color": "terminal.ansiBlue",
+        "commands": [
+          "echo 'Connecting to remote server...'",
+          "ssh user@remote-server"
+        ]
+      }
+    ]
+  }
+}
