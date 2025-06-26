@@ -1,0 +1,44 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "haxurn",        
+    "pnpm",
+    "tsconfig",
+    "monorepo",
+    "devtool",
+    "utils"
+
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "pnpm-lock.yaml",
+    "*.lock",
+    "**/*.min.*",
+    "**/generated/**",
+    "packages/*/dist",
+    "apps/*/dist",
+    "package.json"
+  ],
+  "ignoreRegExpList": [
+    "/\\b[A-Za-z\\d+\\-_]{20,}\\b/g",      
+    "/https?:\\/\\/.*/g"                   
+  ],
+  "enableFiletypes": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "md",
+    "yml",
+    "yaml"
+  ],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "useGitignore": true
+}
