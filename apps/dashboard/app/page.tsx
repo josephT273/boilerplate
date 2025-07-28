@@ -1,7 +1,5 @@
-import { ThemeToggle } from "@/components/app/theme-toggler";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-
 export default function Home() {
-  return <div></div>;
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-background"></main>
+  );
 }
