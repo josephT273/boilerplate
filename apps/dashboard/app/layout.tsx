@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { SidebarProvider } from "@/components/ui/sidebar";
+import {
+  SidebarFooter,
+  SidebarInset,
+  SidebarProvider,
+} from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app/app-sidebar";
+import { TopNavbar } from "@/components/app/app-site-header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -74,8 +79,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SidebarProvider>
-            {children}
-            <AppSidebar />
+            <SidebarFooter className="w-full">
+              <TopNavbar />
+              {children}
+            </SidebarFooter>
+            <AppSidebar variant="floating" />
           </SidebarProvider>
         </ThemeProvider>
       </body>

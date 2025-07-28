@@ -30,10 +30,10 @@ const sidebarItems: SidebarItem[] = [
   { label: "Binary Lab", href: "/lab", icon: Cpu },
 ];
 
-export function AppSidebar() {
+export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname();
   return (
-    <Sidebar side="right" collapsible="icon" className="rounded m-2 mb-10">
+    <Sidebar side="right" collapsible="icon" {...props}>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
