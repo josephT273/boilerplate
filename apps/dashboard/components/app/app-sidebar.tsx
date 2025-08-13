@@ -28,6 +28,7 @@ const sidebarItems: SidebarItem[] = [
   { label: "Dashboard", href: "/dashboard", icon: ShieldCheck },
   { label: "Threat Monitor", href: "/monitor", icon: Activity },
   { label: "Binary Lab", href: "/lab", icon: Cpu },
+  { label: "Leaderboard", href: "/leaderboard", icon: User2 },
 ];
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {

@@ -42,6 +42,10 @@ const config: Config = {
           DEFAULT: "#ff007c",
           foreground: "#ffffff",
         },
+        'thm-black': 'var(--thm-black)',
+        'thm-white': 'var(--thm-white)',
+        'thm-green': 'var(--thm-green)',
+        'thm-red': 'var(--thm-red)',
       },
       fontFamily: {
         sans: ["Fira Code", ...theme.fontFamily.sans],
