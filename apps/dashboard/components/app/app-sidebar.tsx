@@ -65,11 +65,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarFooter className="flex">
         <SidebarTrigger title="Toggle Sidebar" />
         <NavUser
-          user={{
-            name: "HunterX",
-            email: "Hunter@sectopia.com",
-            avatar: "/avatars/shadcn.jpg",
-          }}
+          name="HunterX"
+          email="Hunter@sectopia.com"
+          avatar="/avatars/shadcn.jpg"
         />
       </SidebarFooter>
     </Sidebar>
